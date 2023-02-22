@@ -6,7 +6,7 @@ puts 'Creating restaurants...'
   Restaurant.create(
     name: Faker::Restaurant.name,
     address: Faker::Address.street_name,
-    phone_number: Faker::PhoneNumber.phone_number,
+    phone_number: Faker::PhoneNumber.phone_number_with_country_code,
     category: %w[chinese italian japanese french belgian].sample
   )
 end
